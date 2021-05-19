@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">      
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+     <title>Temperature Conversion</title>
+</head>
+<body>
+    <h2 class="h2 text-center mt-4">Temperature Conversion</h2>
+
+
+    <div class="container col-sm mt-3 me-5 rounded-3 p-4 shadow text-center position-relative height80   ">
+        <div class="row">
+          <div class="col height70 ">
+            <form action="" id="form" onsubmit="calculateTemp();return false">
+                <label for="" class="input-label">  <h3>Input a number you would like to convert</h3> </label> <br>
+                <input type="number" id="temp">
+                <select name="select" id="temp_diff">
+                    <option value="cel">°Celcius</option>
+                    <option value="feh">°Ferenheit</option> 
+               </select> <br>
+
+               <input type="submit" value="submit" class=" btn border-dark rounded shadow-lg mt-3"> <br>
+               <span id="resultContainer"></span>
+            </form>
+</body>
+    <script src="index.js"></script>
+
+</html>
